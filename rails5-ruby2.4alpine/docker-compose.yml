@@ -9,6 +9,7 @@ services:
       - 4000:4000
     volumes:
       - ./:/home/app
+      - bundle:/bundle
     stdin_open: true
     tty: true
   postgres:
@@ -20,4 +21,5 @@ services:
       - pgdata:/var/lib/postgresql/data
 volumes:
   pgdata:
+  bundle:
 
